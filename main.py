@@ -56,9 +56,6 @@ def main():
             #           os.path.join('tasks', i['username']) + '_' + list_line[-2].replace('.', '-') + 'T'
             #           + list_line[-1][:5].replace(':', '-') + '.txt')
             # for ubuntu
-            print(i['username'])
-            print(list_line)
-            print(list_line[-1])
             os.rename(os.path.join('tasks', i['username']) + '.txt',
                       os.path.join('tasks', i['username']) + '_' + list_line[-2].replace('.', '-') + 'T'
                       + list_line[-1][:5] + '.txt')
